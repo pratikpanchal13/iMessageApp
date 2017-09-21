@@ -13,6 +13,16 @@
 		A9A5234C1F72700000776E4A /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A5234B1F72700000776E4A /* MessagesViewController.swift */; };
 		A9A5234F1F72700000776E4A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A5234D1F72700000776E4A /* MainInterface.storyboard */; };
 		A9A523511F72700000776E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A523501F72700000776E4A /* Assets.xcassets */; };
+		A9A5235D1F72702800776E4A /* Stickers.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9A5235C1F72702800776E4A /* Stickers.plist */; };
+		A9A5235E1F72702800776E4A /* Stickers.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9A5235C1F72702800776E4A /* Stickers.plist */; };
+		A9A523631F7273AD00776E4A /* StickersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A523621F7273AD00776E4A /* StickersVC.swift */; };
+		A9A523671F727A8700776E4A /* StickerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A523661F727A8700776E4A /* StickerHeader.swift */; };
+		A9A523691F727ACF00776E4A /* cellStickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A523681F727ACF00776E4A /* cellStickers.swift */; };
+		A9A5236D1F728B3C00776E4A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A5234D1F72700000776E4A /* MainInterface.storyboard */; };
+		A9A523931F729D8D00776E4A /* ImagesPNG in Resources */ = {isa = PBXBuildFile; fileRef = A9A523921F729D8D00776E4A /* ImagesPNG */; };
+		A9A523941F729D8D00776E4A /* ImagesPNG in Resources */ = {isa = PBXBuildFile; fileRef = A9A523921F729D8D00776E4A /* ImagesPNG */; };
+		A9A523961F72A68E00776E4A /* ImagesGIF in Resources */ = {isa = PBXBuildFile; fileRef = A9A523951F72A68E00776E4A /* ImagesGIF */; };
+		A9A523971F72A68E00776E4A /* ImagesGIF in Resources */ = {isa = PBXBuildFile; fileRef = A9A523951F72A68E00776E4A /* ImagesGIF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,13 @@
 		A9A5234E1F72700000776E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		A9A523501F72700000776E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9A523521F72700000776E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9A5235C1F72702800776E4A /* Stickers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stickers.plist; sourceTree = "<group>"; };
+		A9A5235F1F72710000776E4A /* iMessageApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMessageApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		A9A523621F7273AD00776E4A /* StickersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickersVC.swift; sourceTree = "<group>"; };
+		A9A523661F727A8700776E4A /* StickerHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerHeader.swift; sourceTree = "<group>"; };
+		A9A523681F727ACF00776E4A /* cellStickers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellStickers.swift; sourceTree = "<group>"; };
+		A9A523921F729D8D00776E4A /* ImagesPNG */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ImagesPNG; sourceTree = "<group>"; };
+		A9A523951F72A68E00776E4A /* ImagesGIF */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ImagesGIF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +119,17 @@
 		A9A5234A1F72700000776E4A /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				A9A523951F72A68E00776E4A /* ImagesGIF */,
+				A9A523921F729D8D00776E4A /* ImagesPNG */,
 				A9A5234B1F72700000776E4A /* MessagesViewController.swift */,
 				A9A5234D1F72700000776E4A /* MainInterface.storyboard */,
 				A9A523501F72700000776E4A /* Assets.xcassets */,
 				A9A523521F72700000776E4A /* Info.plist */,
+				A9A5235C1F72702800776E4A /* Stickers.plist */,
+				A9A5235F1F72710000776E4A /* iMessageApp-Bridging-Header.h */,
+				A9A523621F7273AD00776E4A /* StickersVC.swift */,
+				A9A523661F727A8700776E4A /* StickerHeader.swift */,
+				A9A523681F727ACF00776E4A /* cellStickers.swift */,
 			);
 			path = MessagesExtension;
 			sourceTree = "<group>";
@@ -159,6 +183,7 @@
 				TargetAttributes = {
 					A9A523381F72700000776E4A = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					A9A523421F72700000776E4A = {
@@ -191,7 +216,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A523931F729D8D00776E4A /* ImagesPNG in Resources */,
+				A9A5236D1F728B3C00776E4A /* MainInterface.storyboard in Resources */,
+				A9A5235D1F72702800776E4A /* Stickers.plist in Resources */,
 				A9A5233D1F72700000776E4A /* Assets.xcassets in Resources */,
+				A9A523961F72A68E00776E4A /* ImagesGIF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +228,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A523941F729D8D00776E4A /* ImagesPNG in Resources */,
+				A9A5235E1F72702800776E4A /* Stickers.plist in Resources */,
 				A9A523511F72700000776E4A /* Assets.xcassets in Resources */,
 				A9A5234F1F72700000776E4A /* MainInterface.storyboard in Resources */,
+				A9A523971F72A68E00776E4A /* ImagesGIF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A523671F727A8700776E4A /* StickerHeader.swift in Sources */,
+				A9A523691F727ACF00776E4A /* cellStickers.swift in Sources */,
+				A9A523631F7273AD00776E4A /* StickersVC.swift in Sources */,
 				A9A5234C1F72700000776E4A /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,9 +398,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iMessageApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Company.iMessageApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MessagesExtension/iMessageApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -375,9 +414,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iMessageApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Company.iMessageApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MessagesExtension/iMessageApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
